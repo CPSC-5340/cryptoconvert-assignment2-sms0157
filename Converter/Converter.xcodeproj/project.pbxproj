@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61099F862BB4EA0700BDFD9C /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61099F852BB4EA0700BDFD9C /* CryptoViewModel.swift */; };
 		619B51812BAB66BA00ED352A /* ConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619B51802BAB66BA00ED352A /* ConverterApp.swift */; };
 		619B51832BAB66BA00ED352A /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619B51822BAB66BA00ED352A /* Converter.swift */; };
 		619B51852BAB66C800ED352A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619B51842BAB66C800ED352A /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		61099F852BB4EA0700BDFD9C /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		619B517D2BAB66BA00ED352A /* Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		619B51802BAB66BA00ED352A /* ConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterApp.swift; sourceTree = "<group>"; };
 		619B51822BAB66BA00ED352A /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				619B51822BAB66BA00ED352A /* Converter.swift */,
 				619B51B02BAF862200ED352A /* Crypto.swift */,
 				619B51AC2BAC647700ED352A /* ConvertModel.swift */,
+				61099F852BB4EA0700BDFD9C /* CryptoViewModel.swift */,
 				619B51AE2BAC64E600ED352A /* ConverterViewModel.swift */,
 				619B51AA2BAB670F00ED352A /* CurrencyItem.swift */,
 				619B51842BAB66C800ED352A /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 				619B51B12BAF862200ED352A /* Crypto.swift in Sources */,
 				619B51832BAB66BA00ED352A /* Converter.swift in Sources */,
 				619B51AF2BAC64E600ED352A /* ConverterViewModel.swift in Sources */,
+				61099F862BB4EA0700BDFD9C /* CryptoViewModel.swift in Sources */,
 				619B51812BAB66BA00ED352A /* ConverterApp.swift in Sources */,
 				619B51AB2BAB670F00ED352A /* CurrencyItem.swift in Sources */,
 				619B51AD2BAC647700ED352A /* ConvertModel.swift in Sources */,

@@ -13,6 +13,8 @@ struct Converter: View {
     
     var body: some View {
         ScrollView {
+            Text("1 USD Exchange Rate")
+                .frame(height: 150)
             LazyVGrid(columns: [GridItem(.adaptive(minimum: 150))]) {
                 ForEach(viewModel.listOfCards) { card in CurrencyItem(card: card)
                         .onTapGesture {

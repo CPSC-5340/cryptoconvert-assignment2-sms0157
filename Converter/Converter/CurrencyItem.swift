@@ -35,16 +35,18 @@ struct CurrencyItem: View {
             VStack {
                 HStack {
                     Text(card.countryFlag)
+                        .font(.system(size: 50))
                     Spacer()
                 }
                 HStack {
                     Spacer()
                     Text(card.currencyCode)
+                        .font(.system(size: 30))
                 }
             }
             .frame(width: 130, height: 130)
             .padding()
-            .background(.gray)
+            .background(.indigo)
             .cornerRadius(6)
         }
     }
@@ -66,7 +68,7 @@ struct CurrencyItem: View {
             }
             .frame(width: 130, height: 130)
             .padding()
-            .background(.gray)
+            .background(.indigo)
             .cornerRadius(6)
         }
     }

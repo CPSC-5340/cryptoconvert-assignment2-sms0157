@@ -11,23 +11,22 @@ import SwiftUI
 struct ConverterApp: App {
     var body: some Scene {
         WindowGroup {
-            Converter()
-        }
-    }
-}
-
-struct ContentView: View {
-    var body: some View {
-        NavigationView {
-            VStack(spacing: 10) {
-                Text("Converter")
-                NavigationLink(destination: Converter()) {
-                    Text("Currency Converter")
-                }
-                NavigationLink(destination: Crypto()) {
-                    Text("Crypto Converter")
+            NavigationView {
+                VStack(spacing: 10) {
+                    Text("Conversion App")
+                        .font(.largeTitle)
+                    List {
+                        NavigationLink(destination: Converter()) {
+                            Text("World Currency Exchange")
+                        }
+                        NavigationLink(destination: Crypto()) {
+                            Text("Crypto Exchange")
+                        }
+                        
+                    }
                 }
             }
+            
         }
     }
 }

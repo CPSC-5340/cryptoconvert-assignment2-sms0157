@@ -9,35 +9,34 @@ import SwiftUI
 
 
 struct Crypto: View {
-    @ObservedObject var viewModel = ConverterViewModel()
+    @StateObject private var viewModel = CryptoViewModel()
     
-    @Binding var bitcoin: Double
     
     
     var body : some View {
         HStack {
             Text("Bitcoin")
                 .font(Font.headline.bold())
-        
-            TextField("", value: $bitcoin, format: .number)
+                .frame(width: 60, height: 300)
+            
+            TextField("Amount", text: $viewModel.bitcoin)
                 .padding()
                 .frame(width: 200)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.decimalPad)
-            
-            
-            
-            List {
-                Text("USD: \(bitcoin * 69979.80,specifier: "%.2f")")
-                Text("")
-                
+        }
+        
+            List(viewModel.values, id: \.0) { currency, value in
+                HStack {
+                    Text("\(currency)")
+                    Spacer()
+                    Text("\(String(format: "%.1f", value))")
+                }
             }
         }
-        }
     }
-    
-
 
 #Preview {
-    Crypto(bitcoin: Binding<Double>)
+    Crypto()
 }
+
